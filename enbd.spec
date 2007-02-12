@@ -12,7 +12,7 @@
 #
 %define	rel	0.1
 Summary:	Enhanced Network Block Device
-Summary(pl.UTF-8):   Wzbogacona wersja sieciowego urządzenia blokowego
+Summary(pl.UTF-8):	Wzbogacona wersja sieciowego urządzenia blokowego
 Name:		enbd
 Version:	2.4.32
 Release:	%{rel}
@@ -31,7 +31,7 @@ Wzbogacona wersja sieciowego urządzenia blokowego.
 
 %package -n kernel-block-enbd
 Summary:	embd kernel module
-Summary(pl.UTF-8):   Moduł jądra enbd
+Summary(pl.UTF-8):	Moduł jądra enbd
 Release:	%{rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_up}
@@ -45,7 +45,7 @@ Moduł jądra enbd.
 
 %package -n kernel-smp-block-enbd
 Summary:	enbd SMP kernel module
-Summary(pl.UTF-8):   Moduł jądra SMP enbd
+Summary(pl.UTF-8):	Moduł jądra SMP enbd
 Release:	%{rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_up}
