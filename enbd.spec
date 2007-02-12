@@ -12,7 +12,7 @@
 #
 %define	rel	0.1
 Summary:	Enhanced Network Block Device
-Summary(pl):	Wzbogacona wersja sieciowego urz±dzenia blokowego
+Summary(pl.UTF-8):   Wzbogacona wersja sieciowego urzÄ…dzenia blokowego
 Name:		enbd
 Version:	2.4.32
 Release:	%{rel}
@@ -26,12 +26,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Enhanced Network Block Device.
 
-%description -l pl
-Wzbogacona wersja sieciowego urz±dzenia blokowego.
+%description -l pl.UTF-8
+Wzbogacona wersja sieciowego urzÄ…dzenia blokowego.
 
 %package -n kernel-block-enbd
 Summary:	embd kernel module
-Summary(pl):	Modu³ j±dra enbd
+Summary(pl.UTF-8):   ModuÅ‚ jÄ…dra enbd
 Release:	%{rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_up}
@@ -40,12 +40,12 @@ Requires(post,postun):	/sbin/depmod
 %description -n kernel-block-enbd
 enbd kernel module.
 
-%description -n kernel-block-enbd -l pl
-Modu³ j±dra enbd.
+%description -n kernel-block-enbd -l pl.UTF-8
+ModuÅ‚ jÄ…dra enbd.
 
 %package -n kernel-smp-block-enbd
 Summary:	enbd SMP kernel module
-Summary(pl):	Modu³ j±dra SMP enbd
+Summary(pl.UTF-8):   ModuÅ‚ jÄ…dra SMP enbd
 Release:	%{rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_up}
@@ -54,8 +54,8 @@ Requires(post,postun):	/sbin/depmod
 %description -n kernel-smp-block-enbd
 enbd SMP kernel module.
 
-%description -n kernel-smp-block-enbd -l pl
-Modu³ j±dra SMP enbd.
+%description -n kernel-smp-block-enbd -l pl.UTF-8
+ModuÅ‚ jÄ…dra SMP enbd.
 
 %prep
 %setup -q
